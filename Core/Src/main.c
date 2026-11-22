@@ -103,7 +103,7 @@ int main(void)
     {
         led_pulse_flag = 0;
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_RESET);  // 点亮
-				//printf("距离过近\r\n");
+				printf("距离过近\r\n");
         HAL_Delay(LED_PULSE_MS);                               // 保持 300ms
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, GPIO_PIN_SET);    // 熄灭
 			  
